@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZBSXC_TRACKAPPUSAGE_SRV" xml:lang="en" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="AppUsage" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ETime"/>
+                    <PropertyRef Name="Mandt"/>
+                    <PropertyRef Name="UserId"/>
+                    <PropertyRef Name="EDate"/>
+                </Key>
+                <Property Name="DTime" Type="Edm.String" Nullable="false" sap:label="Depart Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DDate" Type="Edm.String" Nullable="false" sap:label="Depart Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Browser" Type="Edm.String" Nullable="false" sap:label="Browser" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ETime" Type="Edm.String" Nullable="false" sap:label="Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AppID" Type="Edm.String" Nullable="false" sap:label="App Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Device" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Device Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="OS" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Operating System" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Appname" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Interface File Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Client" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UserId" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="User Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EDate" Type="Edm.String" Nullable="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Fullname" Type="Edm.String" Nullable="false" MaxLength="80" sap:label="Full Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="UserStatus" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="UserId"/>
+                </Key>
+                <Property Name="Flag" Type="Edm.String" Nullable="false" sap:label="Active / Inactive" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Fullname" Type="Edm.String" Nullable="false" sap:label="Full name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UserId" Type="Edm.String" Nullable="false" sap:label="User ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ToDate" Type="Edm.String" Nullable="false" sap:label="To Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FromDate" Type="Edm.String" Nullable="false" sap:label="From Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZBSXC_TRACKAPPUSAGE_SRV" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="AppUsageSet" EntityType="ZBSXC_TRACKAPPUSAGE_SRV.AppUsage" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="UserStatusSet" EntityType="ZBSXC_TRACKAPPUSAGE_SRV.UserStatus" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="https://pgdvpdb01.sap.princesgroup.com:8100/sap/opu/odata/sap/ZBSXC_TRACKAPPUSAGE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://pgdvpdb01.sap.princesgroup.com:8100/sap/opu/odata/sap/ZBSXC_TRACKAPPUSAGE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

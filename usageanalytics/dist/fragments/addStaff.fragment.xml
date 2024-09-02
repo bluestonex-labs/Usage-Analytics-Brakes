@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.f">
+	<Dialog title="Add Staff">
+		<content>
+			<f:SimpleForm xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:l="sap.ui.layout"
+				xmlns:f="sap.ui.layout.form" id="SimpleForm" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+				singleContainerFullSize="false" class="sapUiTinyMarginTop">
+				<f:content>
+					<Label text="First Name"/>
+					<Input id="inFname"/>
+					<Label text="Last Name"/>
+					<Input id="inLname"/>
+					<Label text="Email"/>
+					<Input id="inEmail"/>
+					<Label text="Mobile No."/>
+					<Input id="inMobile"/>
+					<Label text="Base Site"/>
+					<ComboBox id="idComboSite" placeholder="Select Base Site" showSecondaryValues="true" items="{ path: '/sites', sorter: { path: 'SiteKey' } }">
+						<core:ListItem key="{SiteKey}" text="{SiteName}" additionalText="{SiteKey}"/>
+					</ComboBox>
+					<Label text="Telephone No."/>
+					<Input id="inTel"/>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button text="Confirm" press="onAdd" id="btnAdd" type="Accept"/>
+			<Button text="Cancel" press="onCancel" type="Reject"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

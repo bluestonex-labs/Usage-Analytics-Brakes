@@ -1,0 +1,57 @@
+<mvc:View
+    controllerName="bsx.usageanalytics.controller.Detail"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:card="sap.f.cards" xmlns:viz="sap.viz.ui5.controls" xmlns:core="sap.ui.core"
+	xmlns:fo="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:smartField="sap.ui.comp.smartfield"
+	xmlns:semantic="sap.f.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" id="test">
+
+    <semantic:SemanticPage
+        id="detailPage"
+        busy="{detailView>/busy}"
+        busyIndicatorDelay="{detailView>/delay}">
+        <semantic:titleHeading>
+            <Title
+                text="Create Request"
+                level="H2"/>
+        </semantic:titleHeading>
+        <semantic:content>
+            <l:VerticalLayout id="containerLayout" width="100%">
+				<l:BlockLayout id="BlockLayout" background="Dashboard">
+					<l:BlockLayoutRow accentCells="detail1">
+						<l:BlockLayoutCell id="detail1" width="1" class="blockCellTextSize blockCellPadding cellTitleColour test">
+							<!--	<Label text="Over time" class="leftPadding"/> -->
+							<List class="cardTitle">
+								<items>
+									<StandardListItem title="Number of Materials Created" id="titleItem" description="Over time" class="cardTitle" type="Active"
+										press="onTile1Extend"/>
+								</items>
+							</List>
+							<viz:VizFrame legendVisible="true" id="detailMaterialType" width="100%" uiConfig="{applicationSet:'fiori'}" vizType="line" class="vizBg"/>
+						</l:BlockLayoutCell>
+					</l:BlockLayoutRow>
+				</l:BlockLayout>
+				<l:content/>
+			</l:VerticalLayout>
+        </semantic:content>
+
+        <semantic:closeAction>
+            <semantic:CloseAction
+                    id="closeColumn"
+                    press=".onCloseDetailPress"/>
+        </semantic:closeAction>
+
+        <semantic:fullScreenAction>
+            <semantic:FullScreenAction
+                    id="enterFullScreen"
+                    visible="{= !${device>/system/phone} &amp;&amp; !${appView>/actionButtonsInfo/midColumn/fullScreen}}"
+                    press=".toggleFullScreen"/>
+        </semantic:fullScreenAction>
+        <semantic:exitFullScreenAction>
+            <semantic:ExitFullScreenAction
+                    id="exitFullScreen"
+                    visible="{= !${device>/system/phone} &amp;&amp; ${appView>/actionButtonsInfo/midColumn/fullScreen}}"
+                    press=".toggleFullScreen"/>
+        </semantic:exitFullScreenAction>
+
+    </semantic:SemanticPage>
+
+</mvc:View>

@@ -1,0 +1,171 @@
+.blockCellTextSize .sapUiBlockCellTitle{
+	font-size: 1.25rem!important ;
+	padding-left: 20px;
+	padding-top: 20px;
+	
+}
+.cardTitle .sapMSLITitle, .sapMSLITitleOnly{
+	font-size: 1.25rem!important ;
+	
+}
+.sapMSLITitle, .sapMSLITitleOnly, .test{
+	font-size: 1.25rem!important ;
+	
+}
+.redColor{
+	color:red !important;
+}
+.boldText {
+	font-weight: Bolder!important;
+}
+.sapMPIBarNeutral {
+    background: #1d6f94;
+}
+
+@media (max-width: 1024px) {
+.sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent {
+	padding: 1rem 2rem!important;
+}
+}
+@media (max-width: 599px){
+.sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent {
+	padding: 1rem 1rem!important;
+}
+}
+
+.sapMITB.sapUiResponsiveContentPadding>.sapMITBContainerContent>.sapMITBContent {
+	padding: 1rem 2rem;
+}
+.sapMListUl .sapMLIB.sapMGHLI{
+	
+	font-weight: bolder;
+
+}
+.flex {
+	flex:2!important;
+}
+.flexone{
+	flex:1!important;
+}
+
+.twentyPadding{
+	padding-left:20px;
+	padding-right:20px;
+
+}
+.selectedApp{
+	padding: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+}
+
+.sapUiSizeCompact .sapMListTblRow{
+	height:3rem;
+}
+.sapMITBContent {
+
+    background-color: #eeeff1;
+    
+}
+
+.number{
+	font-size: 28px;
+	font-weight: bolder;
+}
+.numberBig{
+	font-size:38px;
+	font-weifht:bolder
+}
+
+
+.test .sapUiBlockCellTitle {
+	margin-bottom: 0rem!important;
+}
+
+.groupTitle{
+	font-size: 18px;
+	font-weight:bolder;
+}
+.sapFDynamicPageTitle{
+	background: white;
+}
+.labelHeight{
+	height: 32px;
+}
+.sapFDynamicPageHeader{
+	background: white;
+}
+.blockCellPadding .sapUiBlockCellContent{
+	border-radius: 5px!important;
+}
+.sapFDynamicPageContent, .sapFDynamicPageContentFitContainer{
+	padding-left:7.5rem;
+	padding-right: 7.5rem;
+}
+.sapUiBlockLayoutBackgroundDashboard .sapUiBlockLayoutCell{
+	/*padding: 3.5px;*/
+}
+.cellTitleColour .sapUiBlockCellContent{
+	background-color: #ffffff!important;
+}
+
+.sapUiSizeCompact .sapMSLI{
+	height: 3rem;
+}
+
+
+.titlePadding {
+	padding-top:3.5rem!important;
+	padding-bottom:2.5rem!important;
+
+}
+
+.count .sapMSLIInfo {
+	font-size: 2rem;
+	font-weight: bolder;
+		color: #7eafde;
+
+}
+
+.count2 .sapMSLIInfo {
+	font-size: 2rem;
+	font-weight: bolder;
+	color: #e9906d;
+}
+.countNo .sapMSLIInfo {
+	font-size: 2rem;
+	font-weight: bolder;
+
+}
+
+.leftPadding {
+	padding-left:20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.vizBg {
+	background: #ffffff;
+	border-top: solid 1px #dddddd;
+	border-bottom: solid 1px #dddddd;
+}
+#appChart{
+	color:"red" !important;
+}
+
+.blockCellPadding .sapUiBlockCellContent{
+	padding: 0rem!important;
+}
+
+.cellTitleColour .sapUiBlockCellContent {
+	background-color: #f3f7f9;
+}
+.cellBg .sapUiBlockCellContent {
+	background-color: white;
+}
+
+.pageBG .sapFDynamicPageContent {
+
+background: #eeeff1!important;	
+
+}
